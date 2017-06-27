@@ -11,5 +11,5 @@ module.exports = {
     require('babel-preset-stage-0'),
     require('babel-preset-flow')
   ],
-  plugins: [require('package-name-import')]
+  plugins: [require('babel-plugin-package-name-import')]
 }
