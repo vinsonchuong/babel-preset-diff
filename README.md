@@ -1,6 +1,4 @@
 # babel-preset-diff
-[![Build Status](https://travis-ci.org/vinsonchuong/babel-preset-diff.svg?branch=master)](https://travis-ci.org/vinsonchuong/babel-preset-diff)
-
 An awesome package
 
 ## Usage
