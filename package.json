@@ -1,0 +1,56 @@
+{
+  "name": "babel-preset-diff",
+  "version": "0.0.0",
+  "description": "An awesome package",
+  "keywords": [],
+  "homepage": "https://github.com/vinsonchuong/babel-preset-diff",
+  "bugs": "https://github.com/vinsonchuong/babel-preset-diff/issues",
+  "license": "MIT",
+  "author": "Vinson Chuong <vinsonchuong@gmail.com>",
+  "files": [
+    "src"
+  ],
+  "main": "./src/index.js",
+  "bin": "./src/bin/babel-preset-diff.js",
+  "repository": "vinsonchuong/babel-preset-diff",
+  "scripts": {
+    "test": "standard -v --fix && flow && ava",
+    "prepack": "build-esm"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "babel-plugin-package-name-import": "^1.0.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "build-esm": "^3.0.1",
+    "flow-bin": "^0.48.0",
+    "standard-esnext": "^3.0.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "stage-0",
+      "flow"
+    ],
+    "plugins": [
+      "package-name-import"
+    ]
+  },
+  "ava": {
+    "concurrency": 8,
+    "babel": "inherit",
+    "require": [
+      "babel-register"
+    ]
+  }
+}
