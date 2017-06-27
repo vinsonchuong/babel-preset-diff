@@ -1,7 +1,7 @@
 {
   "name": "babel-preset-diff",
   "version": "0.0.0",
-  "description": "An awesome package",
+  "description": "Compile all unsupported features for current environments",
   "keywords": [],
   "homepage": "https://github.com/vinsonchuong/babel-preset-diff",
   "bugs": "https://github.com/vinsonchuong/babel-preset-diff/issues",
@@ -10,38 +10,18 @@
   "files": [
     "src"
   ],
-  "main": "./src/index.js",
-  "bin": "./src/bin/babel-preset-diff.js",
+  "main": "./index.js",
   "repository": "vinsonchuong/babel-preset-diff",
   "scripts": {
-    "test": "standard -v --fix",
-    "prepack": "build-esm"
+    "test": "standard -v --fix"
   },
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "babel-plugin-package-name-import": "^1.0.0",
     "babel-preset-env": "^1.5.2",
     "babel-preset-flow": "^6.23.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-register": "^6.24.1",
-    "build-esm": "^3.0.1",
-    "standard-esnext": "^3.0.0"
+    "babel-preset-stage-0": "^6.24.1"
   },
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ],
-      "stage-0",
-      "flow"
-    ],
-    "plugins": [
-      "package-name-import"
-    ]
+  "devDependencies": {
+    "standard-esnext": "^3.0.0"
   }
 }
