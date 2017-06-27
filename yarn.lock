@@ -1232,6 +1232,10 @@ inquirer@^3.0.6:
     strip-ansi "^3.0.0"
     through "^2.3.6"
 
+interop-require@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/interop-require/-/interop-require-1.0.0.tgz#e53103679944c88d7e6105b62a9f4475c783971e"
+
 invariant@^2.2.0, invariant@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
