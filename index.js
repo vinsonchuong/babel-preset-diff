@@ -5,11 +5,14 @@ module.exports = function(context, options) {
     presets: [
       [
         interopRequire('babel-preset-env'),
-        Object.assign({
-          targets: {
-            node: 'current'
-          }
-        }, options)
+        Object.assign(
+          {
+            targets: {
+              node: 'current'
+            }
+          },
+          options
+        )
       ],
       interopRequire('babel-preset-stage-0'),
       interopRequire('babel-preset-flow')
