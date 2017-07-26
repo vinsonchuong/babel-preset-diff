@@ -23,3 +23,14 @@ Add it to your Babel configuration (`.babelrc` or `package.json`)
   ]
 }
 ```
+
+Any configuration options passed into this preset will be passed on to the
+underlying presets and plugins:
+
+```json
+{
+  "presets": [
+    ["diff", { "modules": false }]
+  ]
+}
+```
