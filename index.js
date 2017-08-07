@@ -17,6 +17,9 @@ module.exports = function(context, options) {
       interopRequire('babel-preset-stage-0'),
       interopRequire('babel-preset-flow')
     ],
-    plugins: [interopRequire('babel-plugin-package-name-import')]
+    plugins: [
+      interopRequire('babel-plugin-package-name-import'),
+      interopRequire('babel-plugin-symlink-import')
+    ]
   }
 }

@@ -261,6 +261,12 @@ babel-plugin-package-name-import@^1.0.0:
   dependencies:
     babel-runtime "^6.22.0"
 
+babel-plugin-symlink-import@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-symlink-import/-/babel-plugin-symlink-import-0.0.2.tgz#df67f2b8962ca7732c5aef13cd6ba63a96db73e6"
+  dependencies:
+    find-nearest-package-json "^2.0.1"
+
 babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-async-functions/-/babel-plugin-syntax-async-functions-6.13.0.tgz#cad9cad1191b5ad634bf30ae0872391e0647be95"
@@ -1088,6 +1094,10 @@ find-babel-config@^1.0.1:
   dependencies:
     json5 "^0.5.1"
     path-exists "^3.0.0"
+
+find-nearest-package-json@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/find-nearest-package-json/-/find-nearest-package-json-2.0.1.tgz#e631453ff9506c6b0c1be7f84937d18a68ef756b"
 
 find-root@^1.0.0:
   version "1.0.0"
