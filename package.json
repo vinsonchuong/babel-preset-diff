@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-diff",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Compile all unsupported features for current environments",
   "keywords": [],
   "homepage": "https://github.com/vinsonchuong/babel-preset-diff",
