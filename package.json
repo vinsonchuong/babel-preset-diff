@@ -18,12 +18,12 @@
   "dependencies": {
     "babel-plugin-package-name-import": "^1.0.0",
     "babel-plugin-symlink-import": "^0.0.2",
-    "babel-preset-env": "^1.5.2",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-stage-0": "^6.24.1",
     "interop-require": "^1.0.0"
   },
   "devDependencies": {
-    "standard-esnext": "^3.0.0"
+    "standard-esnext": "^3.0.1"
   }
 }
