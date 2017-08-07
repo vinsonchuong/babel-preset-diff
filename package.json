@@ -7,9 +7,6 @@
   "bugs": "https://github.com/vinsonchuong/babel-preset-diff/issues",
   "license": "MIT",
   "author": "Vinson Chuong <vinsonchuong@gmail.com>",
-  "files": [
-    "src"
-  ],
   "main": "./index.js",
   "repository": "vinsonchuong/babel-preset-diff",
   "scripts": {
