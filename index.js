@@ -1,4 +1,5 @@
 const interopRequire = require('interop-require')
+const path = require('path')
 
 module.exports = function(context, options) {
   return {
@@ -8,7 +9,8 @@ module.exports = function(context, options) {
         Object.assign(
           {
             targets: {
-              node: 'current'
+              node: 'current',
+              browsers: ['defaults']
             }
           },
           options
@@ -18,8 +20,15 @@ module.exports = function(context, options) {
       interopRequire('babel-preset-flow')
     ],
     plugins: [
+      [interopRequire('babel-plugin-transform-runtime'), {
+        moduleName: getModulePath('babel-runtime')
+      }],
       interopRequire('babel-plugin-package-name-import'),
       interopRequire('babel-plugin-symlink-import')
     ]
   }
+}
+
+function getModulePath(module) {
+  return path.dirname(require.resolve(`${module}/package.json`))
 }
