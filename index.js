@@ -9,8 +9,7 @@ module.exports = function(context, options) {
         Object.assign(
           {
             targets: {
-              node: 'current',
-              browsers: ['defaults']
+              node: 'current'
             }
           },
           options
