@@ -36,6 +36,8 @@ underlying presets and plugins:
 ```
 
 Note that by default, `babel-preset-diff` will compile for the currently running
-version of Node.js. Refer to the documentation for
+version of Node.js.
+
+Refer to the documentation for
 [`babel-preset-env`](https://github.com/babel/babel-preset-env/tree/v1.6.1) for
 details on how to target specific browsers.

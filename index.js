@@ -19,9 +19,6 @@ module.exports = function(context, options) {
       interopRequire('babel-preset-flow')
     ],
     plugins: [
-      [interopRequire('babel-plugin-transform-runtime'), {
-        moduleName: getModulePath('babel-runtime')
-      }],
       interopRequire('babel-plugin-package-name-import'),
       interopRequire('babel-plugin-symlink-import')
     ]
