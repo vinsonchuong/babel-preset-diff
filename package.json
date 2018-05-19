@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "babel-plugin-package-name-import": "^1.0.3",
-    "babel-plugin-symlink-import": "^0.0.3",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-stage-0": "^6.24.1",
