@@ -14,8 +14,9 @@
   },
   "dependencies": {
     "babel-plugin-package-name-import": "^1.0.3",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "interop-require": "^1.0.0"
   },

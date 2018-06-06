@@ -1,5 +1,4 @@
 const interopRequire = require('interop-require')
-const path = require('path')
 
 module.exports = function(context, options) {
   return {
@@ -16,14 +15,9 @@ module.exports = function(context, options) {
         )
       ],
       interopRequire('babel-preset-stage-0'),
+      interopRequire('babel-preset-react'),
       interopRequire('babel-preset-flow')
     ],
-    plugins: [
-      interopRequire('babel-plugin-package-name-import')
-    ]
+    plugins: [interopRequire('babel-plugin-package-name-import')]
   }
-}
-
-function getModulePath(module) {
-  return path.dirname(require.resolve(`${module}/package.json`))
 }
