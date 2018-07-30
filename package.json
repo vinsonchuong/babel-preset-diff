@@ -10,17 +10,23 @@
   "main": "./index.js",
   "repository": "vinsonchuong/babel-preset-diff",
   "scripts": {
-    "test": "standard -v --fix"
+    "test": "node -r @babel/register test.js"
   },
   "dependencies": {
+    "@babel/core": "^7.0.0-beta.55",
+    "@babel/preset-env": "^7.0.0-beta.55",
+    "@babel/preset-flow": "^7.0.0-beta.55",
+    "@babel/preset-react": "^7.0.0-beta.55",
     "babel-plugin-package-name-import": "^1.0.3",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-flow": "^6.23.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
     "interop-require": "^1.0.0"
   },
   "devDependencies": {
-    "standard-esnext": "^4.0.3"
+    "@babel/register": "^7.0.0-beta.55",
+    "react": "^16.4.1"
+  },
+  "babel": {
+    "presets": [
+      "module:."
+    ]
   }
 }

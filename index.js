@@ -4,7 +4,7 @@ module.exports = function(context, options) {
   return {
     presets: [
       [
-        interopRequire('babel-preset-env'),
+        interopRequire('@babel/preset-env'),
         Object.assign(
           {
             targets: {
@@ -14,9 +14,8 @@ module.exports = function(context, options) {
           options
         )
       ],
-      interopRequire('babel-preset-stage-0'),
-      interopRequire('babel-preset-react'),
-      interopRequire('babel-preset-flow')
+      interopRequire('@babel/preset-flow'),
+      interopRequire('@babel/preset-react')
     ],
     plugins: [interopRequire('babel-plugin-package-name-import')]
   }
