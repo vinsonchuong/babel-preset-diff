@@ -1,3 +1,4 @@
+/* eslint-disable flowtype/require-valid-file-annotation */
 const interopRequire = require('interop-require')
 
 module.exports = function(context, options) {
