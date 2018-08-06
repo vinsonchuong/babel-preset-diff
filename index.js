@@ -1,11 +1,15 @@
 /* eslint-disable flowtype/require-valid-file-annotation */
-const interopRequire = require('interop-require')
+const presetEnv = require('@babel/preset-env').default
+const presetFlow = require('@babel/preset-flow').default
+const presetReact = require('@babel/preset-react').default
+const pluginPackageNameImport = require('babel-plugin-package-name-import')
+  .default
 
 module.exports = function(context, options) {
   return {
     presets: [
       [
-        interopRequire('@babel/preset-env'),
+        presetEnv,
         Object.assign(
           {
             targets: {
@@ -15,9 +19,9 @@ module.exports = function(context, options) {
           options
         )
       ],
-      interopRequire('@babel/preset-flow'),
-      interopRequire('@babel/preset-react')
+      presetFlow,
+      presetReact
     ],
-    plugins: [interopRequire('babel-plugin-package-name-import')]
+    plugins: [pluginPackageNameImport]
   }
 }
