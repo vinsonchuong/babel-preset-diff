@@ -13,17 +13,17 @@
     "test": "standard -v --fix && node -r @babel/register test.js"
   },
   "dependencies": {
-    "@babel/core": "^7.0.0-rc.2",
-    "@babel/preset-env": "^7.0.0-rc.2",
-    "@babel/preset-flow": "^7.0.0-rc.2",
-    "@babel/preset-react": "^7.0.0-rc.2",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
     "babel-plugin-package-name-import": "^1.0.3"
   },
   "devDependencies": {
-    "@babel/register": "^7.0.0-rc.2",
+    "@babel/register": "^7.0.0",
     "flow-bin": "^0.79.1",
     "react": "^16.4.2",
-    "standard-esnext": "^5.1.4"
+    "standard-esnext": "^5.1.7"
   },
   "babel": {
     "presets": [
