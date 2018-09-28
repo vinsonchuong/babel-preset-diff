@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@babel/register": "^7.0.0",
-    "flow-bin": "^0.79.1",
+    "flow-bin": "^0.81.0",
     "react": "^16.4.2",
     "standard-esnext": "^5.1.7"
   },
