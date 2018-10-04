@@ -13,3 +13,7 @@ function add(x: number, y: number): number {
 async function io() {
   await Promise.resolve()
 }
+
+function dynamicImport() {
+  return import('react')
+}

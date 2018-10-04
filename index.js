@@ -4,6 +4,8 @@ const presetFlow = require('@babel/preset-flow').default
 const presetReact = require('@babel/preset-react').default
 const pluginPackageNameImport = require('babel-plugin-package-name-import')
   .default
+const pluginSyntaxDynamicImport = require('@babel/plugin-syntax-dynamic-import')
+  .default
 
 module.exports = function(context, options) {
   return {
@@ -22,6 +24,6 @@ module.exports = function(context, options) {
       presetFlow,
       presetReact
     ],
-    plugins: [pluginPackageNameImport]
+    plugins: [pluginPackageNameImport, pluginSyntaxDynamicImport]
   }
 }
