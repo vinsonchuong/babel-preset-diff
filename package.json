@@ -24,7 +24,7 @@
     "@babel/register": "^7.0.0",
     "flow-bin": "^0.91.0",
     "react": "^16.7.0",
-    "standard-esnext": "^5.2.1"
+    "standard-esnext": "^5.3.0"
   },
   "babel": {
     "presets": [
