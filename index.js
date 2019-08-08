@@ -7,6 +7,11 @@ const pluginPackageNameImport = require('babel-plugin-package-name-import')
 const pluginSyntaxDynamicImport = require('@babel/plugin-syntax-dynamic-import')
   .default
 
+const pluginProposalNullishCoalescingOperator = require('@babel/plugin-proposal-nullish-coalescing-operator')
+  .default
+const pluginProposalOptionalChaining = require('@babel/plugin-proposal-optional-chaining')
+  .default
+
 module.exports = function(context, options) {
   return {
     presets: [
@@ -24,6 +29,11 @@ module.exports = function(context, options) {
       presetFlow,
       presetReact
     ],
-    plugins: [pluginPackageNameImport, pluginSyntaxDynamicImport]
+    plugins: [
+      pluginPackageNameImport,
+      pluginSyntaxDynamicImport,
+      pluginProposalNullishCoalescingOperator,
+      pluginProposalOptionalChaining
+    ]
   }
 }

@@ -17,3 +17,12 @@ async function io() {
 function dynamicImport() {
   return import('react')
 }
+
+const obj = {
+  foo: {
+    bar: {
+      baz: 42
+    }
+  }
+}
+const nested = obj?.foo?.bar?.boop ?? 'foo'
