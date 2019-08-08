@@ -22,9 +22,9 @@
   },
   "devDependencies": {
     "@babel/register": "^7.5.5",
-    "flow-bin": "^0.103.0",
+    "flow-bin": "^0.104.0",
     "react": "^16.8.6",
-    "standard-esnext": "^5.3.1"
+    "standard-esnext": "^5.3.3"
   },
   "babel": {
     "presets": [
