@@ -13,20 +13,20 @@
     "test": "standard -v --fix && node -r @babel/register test.js"
   },
   "dependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.4.4",
-    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-flow": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.7.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.7.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-flow": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
     "babel-plugin-package-name-import": "^1.0.3"
   },
   "devDependencies": {
-    "@babel/register": "^7.5.5",
-    "flow-bin": "^0.106.2",
-    "react": "^16.9.0",
-    "standard-esnext": "^5.3.3"
+    "@babel/register": "^7.7.7",
+    "flow-bin": "^0.115.0",
+    "react": "^16.12.0",
+    "standard-esnext": "^5.3.5"
   },
   "babel": {
     "presets": [
